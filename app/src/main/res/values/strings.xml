@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Flag Quiz</string>
+
+
+        <string name="correct_score_format">Correct : %1$d</string>
+        <string name="wrong_score_format">Wrong : %1$d</string>
+        <string name="skipped_score_format">Skip : %1$d</string>
+
+        <!-- Example for question progress, if you also used it -->
+        <string name="question_progress_format">Question: %1$d/%2$d</string>
+    <!-- ... other strings ... -->
+    <string name="result_correct_format_prefix">Correct Answers:</string>
+    <string name="result_wrong_format_prefix">Wrong Answers:</string>
+    <string name="result_skipped_format_prefix">Skipped Questions:</string>
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="quiz_completed_title">Quiz Completed!</string>
+    <string name="success_rate_label">Success Rate</string>
+    <string name="play_again_button_text">Play Again</string>
+    <string name="exit_button_text">Exit</string>
+
 </resources>

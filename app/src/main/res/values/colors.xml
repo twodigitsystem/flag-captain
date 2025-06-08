@@ -9,4 +9,23 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="DARK_GREEN">#03A603</color>
+
+
+
+    <color name="test">#CC3636</color>
+    <color name="correct_answer_green">#07DC5F</color>
+    <color name="wrong_answer_red">#F44336</color>
+    <!-- ... other colors ... -->
+    <color name="result_background">#F0F4F8</color>
+    <color name="result_text_primary">#333333</color>
+    <color name="result_text_secondary">#555555</color>
+    <color name="result_correct_color">#4CAF50</color>
+    <color name="result_wrong_color">#F44336</color>
+    <color name="result_skipped_color">#FF9800</color>
+    <color name="result_success_rate_color">#2196F3</color>
+    <color name="result_button_play_again_bg">#FFC107</color>
+    <color name="result_button_play_again_text">#FFFFFF</color>
+    <color name="result_button_exit_bg">#757575</color>
+    <color name="result_button_exit_text">#FFFFFF</color>
+    <color name="card_background_light">#FFFFFF</color>
 </resources>
