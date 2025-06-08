@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/flag_image"
+            android:layout_width="300dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question_number"
+            app:srcCompat="@drawable/india" />
+
+
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/ic_next" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flag_image">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionA_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="option a"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:cornerRadius="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionB_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="option b"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:cornerRadius="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionC_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="option c"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:cornerRadius="50dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionD_button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="option d"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Question: 1"
+        android:textColor="#C51162"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correct_answer_number" />
+
+    <TextView
+        android:id="@+id/wrong_answer_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text_view_bg"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:padding="4dp"
+        android:text="Wrong: 0"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/skip_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/text_view_bg"
+        android:backgroundTint="#DD9400"
+        android:padding="4dp"
+        android:text="Skip: 0"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/correct_answer_number"
+        app:layout_constraintStart_toEndOf="@+id/wrong_answer_number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correct_answer_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/text_view_bg"
+        android:backgroundTint="@color/DARK_GREEN"
+        android:padding="4dp"
+        android:text="Correct: 0"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/next_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/next_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/total_correct_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:text="Total Correct Answer: 8"
+        android:textAlignment="center"
+        android:textColor="#16D308"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_wrong_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="23dp"
+        android:text="Total Wrong Answer: 8"
+        android:textAlignment="center"
+        android:textColor="#E61212"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_correct_answer" />
+
+    <TextView
+        android:id="@+id/total_skip_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="13dp"
+        android:text="Total Skip Questions: 12"
+        android:textAlignment="center"
+        android:textColor="#FFAB00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_wrong_answer" />
+
+    <TextView
+        android:id="@+id/success_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="15dp"
+        android:text="Success Rate: 60%"
+        android:textAlignment="center"
+        android:textColor="#198805"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_skip_question" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/play_again_button"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="play again"
+        android:textSize="16sp"
+        app:backgroundTint="#FF6D00"
+        app:layout_constraintEnd_toStartOf="@+id/quit_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/success_rate" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/quit_button"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="exit"
+        android:textSize="16sp"
+        app:backgroundTint="#880606"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/play_again_button"
+        app:layout_constraintTop_toBottomOf="@+id/success_rate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
